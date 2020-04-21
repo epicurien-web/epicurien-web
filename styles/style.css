@@ -1,0 +1,113 @@
+@font-face {
+  font-family: josefin-sans;
+  src: url("../assets/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
+}
+
+.section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.section.landing {
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../assets/img/landing-background.jpeg");
+  background-position: center;
+}
+
+.section.landing .banner {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 400px;
+  min-height: 150px;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  width: 70vw;
+
+  /* Center content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+}
+
+a, h1 {
+  font-family: josefin-sans;
+}
+
+nav {
+  background-color: white;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+nav > * {
+  display: inline-flex;
+  list-style-type: none;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 997px;
+  padding: 0;
+  width: 100%;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li {
+  height: 50px;
+  line-height: 50px;
+  margin: 0 12px;
+}
+
+nav .right > * {
+  display: inline-block;
+}
+
+.section.about .product {
+  display: flex;
+  margin: 12px 0;
+}
+
+.section.about .product .product-section {
+  height: 100%;
+  width: 50%;
+}
+
+.section.about .product .product-section.img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+
+.section.about .product .product-section img {
+  border-radius: 50%;
+  height: 30vw;
+  width: 30vw;
+}
+
+.section.about .product .product-section .text-wrapper {
+  margin: auto;
+  width: 20vw;
+}
