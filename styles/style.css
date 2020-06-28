@@ -3,20 +3,17 @@
   src: url("../assets/fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf");
 }
 
-.section {
-  height: 100vh;
-  width: 100vw;
-}
-
-.section.landing {
+.section-landing {
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: url("../assets/img/landing-background.jpeg");
   background-position: center;
+  height: 100vh;
+  width: 100vw;
 }
 
-.section.landing .banner {
+.section-landing .banner {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   position: absolute;
@@ -83,31 +80,56 @@ nav .right > * {
   display: inline-block;
 }
 
-.section.about .product {
-  display: flex;
-  margin: 12px 0;
+.product-section {
+  margin: 12px;
+  text-align: left;
 }
 
-.section.about .product .product-section {
-  height: 100%;
-  width: 50%;
+.section-about {
+  text-align: center;
 }
 
-.section.about .product .product-section.img {
-  display: flex;
+.section-about .product {
+  display: inline-flex;
+  margin: 12px 12px;
+  max-width: 900px;
+}
+
+.section-about .product .product-section img {
   align-items: center;
-  justify-content: center;
-  height: 100%;
-  width: 50%;
-}
-
-.section.about .product .product-section img {
   border-radius: 50%;
+  display: flex;
   height: 30vw;
+  justify-content: center;
+  margin: auto;
+  max-width: 300px;
+  max-height: 300px;
   width: 30vw;
 }
 
-.section.about .product .product-section .text-wrapper {
-  margin: auto;
-  width: 90%;
+.section-contact {
+  align-items: center;  
+  background-color: black;
+  display: flex;
+  height: 150px;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.section-contact > *{
+  color: white;
+  font-family: josefin-sans;
+  font-size: 12px;
+  margin: 0;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .section-about .product .product-section img {
+    height: 50vw;
+    width: 50vw;
+  }
+  .section-about .product {
+    display: block;
+  }
 }
